@@ -2,8 +2,15 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
   <title>Portfolio Caio Possa</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -11,7 +18,7 @@
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
-        <a href="#" class="nav__logo">Caio Possa</a>
+        <a href="#" class="nav__logo">Portfólio</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
@@ -20,16 +27,16 @@
             <a href="#home" class="nav__link active">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link">Sobre</a>
           </li>
-          <li class="nav__item">
+          <!--<li class="nav__item">
             <a href="#skills" class="nav__link">Skills</a>
+          </li>-->
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Certificações</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link">Contato</a>
           </li>
         </ul>
       </div>
@@ -45,17 +52,16 @@
     <section class="home bd-grid" id="home">
       <div class="home__data">
         <h1 class="home__title">
-          Hi,<br />Eu sou o <span class="home__title-color">Caio Possa</span><br />
-          Web Designer
+          Olá,<br />Eu sou <span class="home__title-color">Caio Possa</span><br />
+          ServiceNow<br> Developer
         </h1>
 
-        <a href="#" class="button">Contact</a>
+        <a href="#contact" class="button">Contato</a>
       </div>
 
       <div class="home__social">
-        <a href="" class="home__social-icon><i class=" bx bxl-linkedin"></i></a>
-        <a href="" class="home__social-icon><i class=" bx bxl-behance"></i></a>
-        <a href="" class="home__social-icon><i class=" bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/caiopossa" class="home__social-icon"><i class=" bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/possaz" class="home__social-icon"><i class=" bx bxl-instagram"></i></a>
       </div>
 
       <div class="home__img">
@@ -68,7 +74,7 @@
           <g mask="url(#mask0)">
             <path
               d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+            <image class="home__blob-img" x="50" y="60" href="/img/perfil.png" />
           </g>
         </svg>
       </div>
@@ -76,27 +82,36 @@
 
     <!--===== ABOUT =====-->
     <section class="about section" id="about">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title">Sobre</h2>
 
       <div class="about__container bd-grid">
         <div class="about__img">
-          <img src="assets/img/about.jpg" alt="" />
+          <img src="/img/about 1.jpg" alt="" />
         </div>
 
         <div>
-          <h2 class="about__subtitle">I'am Marlon</h2>
+          <h2 class="about__subtitle">Sou Caio Possa</h2>
           <p class="about__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-            ut voluptates soluta, aut earum nemo recusandae cumque
-            perferendis! Recusandae alias accusamus atque.
+            Desenvolvedor com foco em automação de processos, ServiceNow. Tenho um perfil analítico e
+            criativo, buscando sempre unir técnica e propósito em cada projeto e atendendo a necessidade do cliente.
+
+            Possuo experiência que abrange o desenvolvimento dentro do ecossistema ServiceNow. Além disso, gosto de
+            explorar
+            tecnologias como HTML, CSS, JavaScript e AngularJS, aplicando boas práticas de design e usabilidade em
+            interfaces.
+
+            Tenho um olhar detalhista e gosto de construir soluções que realmente melhorem a experiência do usuário e
+            otimizem o trabalho das equipes. Fora do código, me movo por propósito — acredito que a tecnologia deve
+            servir para conectar pessoas e facilitar a vida real.
+            Nos momentos de lazer, gosto de jogar futebol, que me ajuda a manter o foco, o trabalho em equipe e a leveza
+            do dia a dia.
           </p>
         </div>
       </div>
     </section>
 
     <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
+    <!--<section class="skills section" id="skills">
       <h2 class="section-title">Skills</h2>
 
       <div class="skills__container bd-grid">
@@ -150,47 +165,65 @@
         </div>
 
         <div>
-          <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          <img src="/img/work3.jpg" alt="" class="skills__img" />
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!--===== WORK =====-->
     <section class="work section" id="work">
-      <h2 class="section-title">Work</h2>
+      <h2 class="section-title">Certificações</h2>
 
-      <div class="work__container bd-grid">
-        <a href="" class="work__img">
-          <img src="assets/img/work1.jpg" alt="" />
-        </a>
-        <a href="" class="work__img">
-          <img src="assets/img/work2.jpg" alt="" />
-        </a>
-        <a href="" class="work__img">
-          <img src="assets/img/work3.jpg" alt="" />
-        </a>
-        <a href="" class="work__img">
-          <img src="assets/img/work4.jpg" alt="" />
-        </a>
-        <a href="" class="work__img">
-          <img src="assets/img/work5.jpg" alt="" />
-        </a>
-        <a href="" class="work__img">
-          <img src="assets/img/work6.jpg" alt="" />
-        </a>
+      <div>
+
+        <div class="col-md-12 skills_mc">
+          <div class="col-md-4 borda">
+
+            <input type="checkbox" id="processo1" hidden>
+            <label for="processo1" class="button mg-button">ServiceNow</label>
+
+            <div class="conteudo" id="conteudo1">
+              <iframe src="/pages/certificationsn.html" class="dm-frame" width="100%" height="500px"></iframe>
+            </div>
+          </div>
+          <div class="col-md-4 borda">
+
+            <input type="checkbox" id="processo2" hidden>
+            <label for="processo2" class="button mg-button">TPM</label>
+            <div class="conteudo" id="conteudo2">
+              <iframe src="/pages/certificadostpm.html" class="dm-frame" width="100%" height="500px"></iframe>
+            </div>
+
+          </div>
+          <div class="col-md-4 borda">
+
+            <input type="checkbox" id="processo3" hidden>
+            <label for="processo3" class="button mg-button">Processo</label>
+            <div class="conteudo" id="conteudo3">
+              <iframe src="/pages/certificadospros.html" class="dm-frame" width="100%" height="500px"></iframe>
+            </div>
+
+          </div>
+        </div>
       </div>
+
     </section>
 
     <!--===== CONTACT =====-->
     <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
+      <h2 class="section-title">Contato</h2>
 
       <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-          <input type="text" placeholder="Name" class="contact__input" />
-          <input type="mail" placeholder="Email" class="contact__input" />
-          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-          <input type="button" value="Send" class="contact__button button" />
+        <form id="contactForm" action="https://formspree.io/f/myzbropd" method="POST" class="contact__form">
+
+          <input type="text" name="name" placeholder="Name" class="contact__input" required/>
+
+          <input type="mail" name="email" placeholder="Email" class="contact__input" required/>
+
+          <textarea name="message" placeholder="Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
+
+          <button type="submit" value="Enviar" class="contact__button button">Enviar</button>
+
         </form>
       </div>
     </section>
@@ -198,13 +231,29 @@
 
   <!--===== FOOTER =====-->
   <footer class="footer">
-    <p class="footer__title">Caio Possa</p>
-    <div class="footer__social">
-      <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+    <div class="col-md-12 dp-space">
+      <div class="col-md-5 mg-20">
+        <div>
+          <p class="footer__title cm-footer">© 2025 Caio Possa — Portfólio Desenvolvedor</p>
+        </div>
+        <div>
+          <p class="footer__title cm-footer">Feito com HTML, CSS e JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col-md-5 mg-20">
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/caiopossa" class="footer__icon"><i class=" bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/possaz" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        </div>
+        <div>
+          <p class="footer__copy">&#169; All rigths reserved</p>
+        </div>
+      </div>
+
     </div>
-    <p class="footer__copy">&#169; All rigths reserved</p>
+
+
   </footer>
 
   <!--===== SCROLL REVEAL =====-->
@@ -214,8 +263,4 @@
   <script src="/script.js"></script>
 </body>
 
-
 </html>
-
-
-
