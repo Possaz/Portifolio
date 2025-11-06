@@ -55,12 +55,34 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // impedir reload
 
-  // deixa o form enviar normalmente para o Formspree
-  // depois aguarda um pouquinho e limpa
-  setTimeout(() => {
-    document.getElementById("contactForm").reset();
-  }, 500);
+  const form = this;
+  const data = new FormData(form);
 
+  // envia para o Formspree
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      // limpa o form
+      form.reset();
+
+      // mostra a mensagem
+      const msg = document.getElementById("successMessage");
+      msg.style.display = "block";
+
+      // some automaticamente depois de alguns segundos
+      setTimeout(() => {
+        msg.style.display = "none";
+      }, 5000);
+    }
+  } catch (error) {
+    console.error("Erro ao enviar o formulário:", error);
+  }
 });
